@@ -18,7 +18,16 @@ public class MyPlayer {
                     //System.out.println(b);
                     if (a<=x && b<=a){
                         System.out.println(x + " "+ a + " " + b);
+                        System.out.println("resulting boards");
+                        if( b<=0){
+                            System.out.println(x + " " + a + " " + 0 );
+
+                        };
                     }
+
+
+
+
 
 
 
