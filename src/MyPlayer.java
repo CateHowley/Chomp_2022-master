@@ -17,12 +17,36 @@ public class MyPlayer {
                 for (int b = 0; b < 4; b++) {
                     //System.out.println(b);
                     if (a<=x && b<=a){
+                        System.out.println("BOARD");
+
                         System.out.println(x + " "+ a + " " + b);
                         System.out.println("resulting boards");
-                        if( b<=0){
-                            System.out.println(x + " " + a + " " + 0 );
+                        int B= b;
+                        while( B>0){
+                            B= B-1;
+                            System.out.println(x + " " + a + " " + B );
+                        }
 
-                        };
+                        B=b;
+                        int A= a;
+                        while( A>0){
+                            A=A-1;
+                            if(B>A){
+                                B=B-1;
+                            }
+                            System.out.println(x + " " + A + " " + B );
+                        }
+                        B=b;
+                        int X= x;
+                        while( X>0){
+                            X=X-1;
+                            if(A>X && B>X){
+                                X=X-1;
+                            }
+                            System.out.println(X + " " + A + " " + B );
+                        }
+
+
                     }
 
 
