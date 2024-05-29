@@ -43,8 +43,9 @@ public class MyPlayer {
                             if(A>X && B>X){
                                 X=X-1;
                             }
-                            System.out.println(X + " " + A + " " + B );
+                            System.out.println(X + " " + A + " " + B);
                         }
+
 
 
                     }
