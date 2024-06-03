@@ -25,6 +25,9 @@ public class MyPlayer {
                         while( B>0){
                             B= B-1;
                             System.out.println(x + " " + a + " " + B );
+                            if(x==1 && a==0 && B==0){
+                                System.out.println("found death board");
+                            }
                         }
 
                         B=b;
@@ -35,28 +38,33 @@ public class MyPlayer {
                                 B=B-1;
                             }
                             System.out.println(x + " " + A + " " + B );
+                            if(x==1 && A==0 && B==0){
+                                System.out.println("found death board");
+                            }
                         }
+
+                        A=a;
                         B=b;
                         int X= x;
                         while( X>0){
                             X=X-1;
-                            if(A>X && B>X){
-                                X=X-1;
+                            if(A>X){
+                               A=A-1;
                             }
+                            if(B>X){
+                                B=B-1;
+                            }
+
+
                             System.out.println(X + " " + A + " " + B);
+                            if(X==1 && A==0 && B==0){
+                                System.out.println("found death board");
+                            }
                         }
 
 
 
                     }
-
-
-
-
-
-
-
-
 
 
                 }
