@@ -13,6 +13,7 @@ import javax.swing.*;
 
 //Keyboard and Mouse
 import java.awt.event.*;
+import java.util.ArrayList;
 
 //*******************************************************************************
 // Class Definition Section
@@ -59,7 +60,8 @@ public class Chomp implements Runnable, MouseListener {
     // This is the code that runs first and automatically
     public static void main(String[] args) {
         Chomp myApp = new Chomp();   //creates a new instance of the game
-        new Thread(myApp).start();                 //creates a threads & starts up the code in the run( ) method
+        new Thread(myApp).start();//creates a threads & starts up the code in the run( ) method
+        ArrayList<Board> boardsList = new ArrayList<>();
     }
 
     // Constructor Method
